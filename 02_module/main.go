@@ -1,7 +1,7 @@
 package main
 
 import (
-	"02_module/user"
+	user "02_module/user"
 	"fmt"
 )
 
