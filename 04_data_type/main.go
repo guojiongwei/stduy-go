@@ -5,6 +5,11 @@ import (
 	fmt "fmt"
 )
 
+const (
+	BEIJIN   = iota
+	SHANGHAI = iota
+)
+
 func main() {
 	fmt.Println("hello world!")
 
@@ -13,4 +18,10 @@ func main() {
 	basetype.IntType()
 
 	basetype.StrigType()
+
+	basetype.ConstIota()
+	fmt.Println("BEIJIN:", BEIJIN)
+	fmt.Println("SHANGHAI:", SHANGHAI)
+
+	fmt.Println("Test", basetype.Test)
 }
