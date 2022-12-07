@@ -27,3 +27,7 @@ func BoolType() {
 	fmt.Println("b5:", b5)
 	fmt.Println("b6:", b6)
 }
+
+func init() {
+	fmt.Println("初始化------init")
+}
