@@ -36,4 +36,15 @@ func SliceDemo() {
 	fmt.Println("slice6=", slice6)
 	slice7 := slice4[2:]
 	fmt.Println("slice7=", slice7)
+
+	/** 判断空slice */
+	var slice8 []int
+	if slice8 == nil {
+		fmt.Println("slice8是一个空slice", slice8)
+	}
+
+	/** 拷贝slice */
+	slice9 := make([]int, 3)
+	copy(slice9, slice7)
+	fmt.Println("slice9:", slice9)
 }
