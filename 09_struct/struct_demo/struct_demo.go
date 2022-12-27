@@ -33,14 +33,14 @@ func BaseDemo() {
 	person1.sex = "男"
 	person1.info.a = "a"
 
-	fmt.Println("person1=", person1)
-	fmt.Println("person1.info.a=", person1.info.a)
+	fmt.Println("person1==", person1)
+	fmt.Println("person1.info.a==", person1.info.a)
 	if person1.info.b == 0 {
-		fmt.Println("person1.info.b=空")
+		fmt.Println("person1.info.b==空")
 	}
 	changeValue(person1)
-	fmt.Println("值传递改变后的person1=", person1)
+	fmt.Println("值传递改变后的person1==", person1)
 
 	changeValue1(&person1)
-	fmt.Println("引用传递改变后的person1=", person1)
+	fmt.Println("引用传递改变后的person1==", person1)
 }
